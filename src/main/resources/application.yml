@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://hafssa.database.windows.net:1433;database=firstdb;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: hafssa
+    password: "#SQLserver"
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect : org.hibernate.dialect.SQLServerDialect
+
+server:
+  port: 9191
+
+
